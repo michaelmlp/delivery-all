@@ -1,0 +1,16 @@
+spring:
+  application:
+    name: api-listboss
+  data:
+    mongodb:
+      uri: mongodb://localhost:27017/delivery
+
+management:
+  endpoint:
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: info, health, metrics
