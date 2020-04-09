@@ -1,0 +1,11 @@
+spring:
+  profiles: local
+management:
+  endpoint:
+    metrics:
+      enabled: true
+  endpoints:
+    web:
+      base-path: /management
+      exposure:
+        include: info, health, metrics

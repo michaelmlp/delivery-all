@@ -14,7 +14,3 @@ management:
       base-path: /management
       exposure:
         include: info, health, metrics
-
-server:
-  servlet:
-    context-path: /asdf
