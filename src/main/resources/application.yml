@@ -1,6 +1,6 @@
 spring:
   application:
-    name: api-listboss
+    name: api-delivery
   data:
     mongodb:
       uri: mongodb://localhost:27017/delivery
@@ -14,3 +14,7 @@ management:
       base-path: /management
       exposure:
         include: info, health, metrics
+
+server:
+  servlet:
+    context-path: /asdf

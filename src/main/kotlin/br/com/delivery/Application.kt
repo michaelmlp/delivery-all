@@ -21,11 +21,13 @@ open class Application : WebSecurityConfigurerAdapter() {
                 .requestMatchers()
                 .antMatchers(HttpMethod.OPTIONS)
                 .antMatchers("/management/**")
+                .antMatchers("/users")
                 .and()
                 .authorizeRequests()
                 .antMatchers(HttpMethod.OPTIONS).permitAll()
                 .antMatchers("/management/health").permitAll()
                 .antMatchers("/management/info").permitAll()
+                .antMatchers("/users").permitAll()
                 .antMatchers("/management/**").hasRole("ACTUATOR").and().httpBasic()
 
         http.csrf().disable()
