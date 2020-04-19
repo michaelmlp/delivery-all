@@ -1,5 +1,8 @@
 spring:
   profiles: local
+  data:
+    mongodb:
+      uri: mongodb+srv://usertest:g4X57kKqP4w8c4yz@cluster0-wftcr.mongodb.net/test?retryWrites=true&w=majority
 management:
   endpoint:
     metrics:
@@ -9,3 +12,4 @@ management:
       base-path: /management
       exposure:
         include: info, health, metrics
+
